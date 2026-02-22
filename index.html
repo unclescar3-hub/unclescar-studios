@@ -712,7 +712,7 @@
                 .map(para => `<p>${para.replace(/\n/g, '<br>')}</p>`)
                 .join('');
 
-            outputArea.innerHTML = formattedHTML;
+            outputArea.innerHTML = formattedHTML; 
             outputArea.className = `hidden relative z-20 mx-auto max-w-4xl text-lg ${currentDraftingMode === 'story' ? 'generated-story' : 'generated-script font-script'}`;
             
             outputArea.classList.remove('hidden');
@@ -857,7 +857,7 @@
             btn.innerHTML = `<i data-lucide="loader-2" class="w-4 h-4 animate-spin"></i> POLISHING...`;
             btn.disabled = true;
             lucide.createIcons();
-
+zc
             const prompt = `A potential client is submitting an inquiry to our creative agency. Their draft is: "${originalText}". 
             Please rewrite this description to sound professional, clear, exciting, and highly compelling. Fix any grammar issues. Return ONLY the rewritten text, with no introductory filler.`;
             
